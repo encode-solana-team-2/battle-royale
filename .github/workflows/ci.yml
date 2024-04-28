@@ -13,11 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      # - name: Cargo build
-      #   run: cargo build
-      # - name: Check formatting
-      #   run: cargo fmt -- --check
-      # - run: cargo clippy --all-targets -- -D warnings
+      - name: Cargo build
+        run: cargo build
+      - name: Check formatting
+        run: cargo fmt -- --check
+      - run: cargo clippy --all-targets -- -D warnings
       - name: Generate new keygen
         run: solana-keygen new
       - name: Set solana target cluster to local
