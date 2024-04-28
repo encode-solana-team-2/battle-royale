@@ -7,9 +7,9 @@ on:
 env:
   CARGO_TERM_COLOR: always
 jobs:
-  build:
+  test:
+    name: anchor test
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: rustup toolchain install
@@ -20,4 +20,4 @@ jobs:
           anchor-version: '0.30.0'
           solana-cli-version: '1.18.12'
           node-version: '20.12.2'
-            
+          
