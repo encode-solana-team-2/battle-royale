@@ -9,7 +9,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: solanalabs/solana:v1.18.12
 
     steps:
       - uses: actions/checkout@v3
