@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  /* Adjust the path if your image is located elsewhere */
+  background-image: url('../images/battle-royale.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-link {
+  text-decoration: none;
+}
+
+.enter-button {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #764c24; /* Earthy tone */
+  color: #f4f4f4;
+  border: none;
+  padding: 30px 60px;
+  font-size: 48px;
+  cursor: pointer;
+  box-shadow: 0 8px #666, 0 -6px #666 inset;
+  transition: all 0.3s;
+}
+
+.enter-button:hover {
+  background-color: #8a6d3b; /* Lighter earth tone */
+  box-shadow: 0 4px #444, 0 -3px #444 inset;
+  transform: translateY(-2px);
+}
+
+.enter-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #666;
+}
+
+.rectangle {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+.warrior-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.support-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.countdown-wrapper {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.countdown {
+  font-size: 46px;
+  color: white;
+}
+
+.create-wrapper {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.create {
+  font-size: 46px;
+  color: white;
+}
